@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LDAP Authentication Test Server</title>
+    <title>LDAP Authentication Test Service</title>
     <!-- Pure.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
     <!--[if lte IE 8]>
@@ -20,20 +20,56 @@
     <link rel="stylesheet" href="css/glitch.css">
   </head>
   <body>
+    <a href="https://github.com/trileg/ldap-testserver" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
     <nav>
       <div class="pure-g">
-        <div id="topbar-left" class="pure-u-1-2">
+        <div id="topbar" class="pure-u-1-1">
           <a href="https://www.trileg.net/" class="glitch" data-text="www.trileg.net">www.trileg.net</a>
-        </div>
-        <div id="topbar-right" class="pure-u-1-2">
           <a href="https://github.com/trileg/WebTeX" target="_blank" class="glitch" data-text="WebTeX">WebTeX</a>
           <a href="https://github.com/trileg/MotionAuth" target="_blank" class="glitch" data-text="MotionAuth">MotionAuth</a>
         </div>
       </div>
     </nav>
-    <div id="main" class="pure-g">
-      <div class="pure-u-1-2"><p>Sample text 1</p></div>
-      <div class="pure-u-1-2"><p>Sample text 2</p></div>
+    <p><h2 id="service-title">LDAP Authentication Test Service</h2></p>
+    <div id="main">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>LDAP Server Address</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>trileg.net</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>LDAP Server Port</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>50389</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>LDAP Users Base DN</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>ou=People,dc=trileg,dc=net</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>LDAP User DN</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>uid=charlotte,ou=People,dc=trileg,dc=net</p></div>
+      </div>
+      <hr class="hr-split" size="1" width="75%" align="center" noshade>
+      <h4>User - Password List</h4>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>charlotte</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>dunois</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>laura</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>bodewig</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>houki</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>shinonono</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>cecilia</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>alcott</p></div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 main-left"><p>lingyin</p></div>
+        <div class="pure-u-1 pure-u-md-1-2 main-right"><p>huang</p></div>
+      </div>
     </div>
   </body>
 </html>

@@ -3,15 +3,8 @@ nav {
   overflow: hidden;
 }
 
-#topbar-left {
+#topbar {
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-#topbar-right {
-  text-align: right;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 0;
