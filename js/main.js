@@ -7,7 +7,7 @@ function init() {
 function isActive() {
   $.ajax({
     type: 'POST',
-    url: '../cgi/connect.cgi',
+    url: 'cgi/connect.cgi',
     contentType: 'application/json',
     success: function(data) {
       $('#status').empty();
