@@ -11,7 +11,7 @@ function isActive() {
     contentType: 'application/json',
     success: function(data) {
       $('#status').empty();
-      $('#status').val(data.result);
+      $('#status').append(data.result);
     }
   });
   return false;
