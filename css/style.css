@@ -17,10 +17,10 @@ html, body{
   margin-top: 50px;
   margin-bottom: 10px;
 }
-#active {
+.active {
   color: #3EB813;
 }
-#inactive {
+.inactive {
   color: #CB5540;
 }
 #main {

@@ -11,10 +11,12 @@ function isActive() {
     contentType: 'application/json',
     success: function(data) {
       $('#status').empty();
+      $('#status').removeClass();
+      $('#status').append(data.result);
       if (data.result === 'Active') {
-        $('#status').append('<h2 id="active">'+data.result+'</h2>');
+        $('#status').addClass('active');
       } else {
-        $('#status').append('<h2 id="inactive">'+data.result+'</h2>');
+        $('#status').addClass('inactive');
       }
     }
   });
