@@ -11,7 +11,11 @@ function isActive() {
     contentType: 'application/json',
     success: function(data) {
       $('#status').empty();
-      $('#status').append(data.result);
+      if (data.result === 'Active') {
+        $('#status').append('<h2 id="active">'+data.result+'</h2>');
+      } else {
+        $('#status').append('<h2 id="inactive">'+data.result+'</h2>');
+      }
     }
   });
   return false;

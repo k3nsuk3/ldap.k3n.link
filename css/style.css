@@ -17,6 +17,12 @@ html, body{
   margin-top: 50px;
   margin-bottom: 10px;
 }
+#active {
+  color: #3EB813;
+}
+#inactive {
+  color: #CB5540;
+}
 #main {
   background-color: rgba(12,0,25,0.3);
   color: #ffffff;
