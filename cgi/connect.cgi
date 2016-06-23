@@ -25,7 +25,7 @@ for k, v in user_dict.items():
         Connection(s, auto_bind=True, client_strategy=STRATEGY_SYNC,
                     user=user_dn, password=v, authentication=AUTH_SIMPLE,
                     check_names=True)
-    except LDAPBindError:
+    except:
         output = 'Inactive'
         break
 
