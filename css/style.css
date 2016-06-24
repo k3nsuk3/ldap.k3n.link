@@ -24,14 +24,59 @@ html, body{
   color: #CB5540;
 }
 #main {
-  background-color: rgba(12,0,25,0.3);
   color: #ffffff;
   text-align: center;
   font-family: 'Gruppo', cursive;
-  margin: 10px 50px;
 }
+
+#detail table {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+}
+#detail table th,
+table td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+#detail table th {
+  text-align: center;
+  background-color: rgba(12, 0, 25, 0.3);
+}
+@media screen and (max-width: 600px) {
+  #detail table {
+    border-top: 1px solid #999;
+  }
+  #detail table td {
+    display: block;
+    text-align: center;
+  }
+  #detail table th {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    width: auto;
+  }
+}
+
+#user table {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+}
+#user table th,
+table td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+#user table th {
+  text-align: center;
+  background-color: rgba(12, 0, 25, 0.3);
+}
+
 .hr-split {
   border-top: 1px solid #3B86C6;
+  margin: 50px auto;
 }
 .gruppo_style {
   font-family: 'Gruppo', cursive;
