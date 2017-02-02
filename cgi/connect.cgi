@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from ldap3 import Server, Connection, \
-    AUTH_SIMPLE, STRATEGY_SYNC, GET_ALL_INFO, LDAPBindError
+from ldap3 import Server, Connection, SIMPLE, SYNC, ALL
 import json
 
 
@@ -20,10 +19,10 @@ output = ''
 
 for k, v in user_dict.items():
     user_dn = 'uid='+k+','+base_dn
-    s = Server(server, port=port, get_info=GET_ALL_INFO)
+    s = Server(server, port=port, get_info=ALL)
     try:
-        Connection(s, auto_bind=True, client_strategy=STRATEGY_SYNC,
-                    user=user_dn, password=v, authentication=AUTH_SIMPLE,
+        Connection(s, auto_bind=True, client_strategy=SYNC,
+                    user=user_dn, password=v, authentication=SIMPLE,
                     check_names=True)
     except:
         output = 'Inactive'
